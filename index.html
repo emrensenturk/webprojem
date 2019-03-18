@@ -2,15 +2,17 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 * {
   box-sizing: border-box;
 }
 
 body {
-  background-color: #f1f1f1;
+  background-color: #f8f1f1;
   padding: 20px;
-  font-family: Arial;
+  font-family: Verdana;
 }
 
 /* Center website */
@@ -79,6 +81,14 @@ h1 {
 </style>
 </head>
 <body>
+<div class="bg-image img1"></div>
+<div class="bg-image img2"></div>
+<div class="bg-image img3"></div>
+<div class="bg-image img4"></div>
+<div class="bg-image img5"></div>
+<div class="bg-image img6"></div>
+
+<div class="bg-text"></div>
 
 <!-- MAIN (Center website) -->
 <div class="main">
@@ -89,84 +99,157 @@ h1 {
 
 <h2>PORTFOLIO</h2>
 
+
 <div id="myBtnContainer">
-  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-  <button class="btn" onclick="filterSelection('nature')"> Nature</button>
-  <button class="btn" onclick="filterSelection('cars')"> Cars</button>
-  <button class="btn" onclick="filterSelection('people')"> People</button>
+  <button class="btn active" onclick="filterSelection('all')"> Ana Sayfa</button>
+  <button class="btn" onclick="filterSelection('Mimari')"> Mimari</button>
+  <button class="btn" onclick="filterSelection('Sehir')"> Şehir</button>
+  <button class="btn" onclick="filterSelection('Doga')"> Doğa</button>
+  <button class="btn" onclick="filterSelection('Portre')"> Portre</button>
 </div>
 
 <!-- Portfolio Gallery Grid -->
 <div class="row">
-  <div class="column nature">
+  <div class="column Mimari">
     <div class="content">
-      <img src="anahtar.jpg" alt="Mountains" style="width:100%">
-      <h4>Mountains</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-  <div class="column nature">
-    <div class="content">
-    <img src="doğal.jpg" alt="Lights" style="width:100%">
-      <h4>Lights</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-  <div class="column nature">
-    <div class="content">
-    <img src="edirne.jpg" alt="Nature" style="width:100%">
-      <h4>Forest</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-  
-  <div class="column cars">
-    <div class="content">
-      <img src="inebey1.jpg" alt="Car" style="width:100%">
-      <h4>Retro</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-  <div class="column cars">
-    <div class="content">
-    <img src="karakoy.jpg" alt="Car" style="width:100%">
-      <h4>Fast</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-  <div class="column cars">
-    <div class="content">
-    <img src="mezarlık.jpg" alt="Car" style="width:100%">
-      <h4>Classic</h4>
-      <p>Lorem ipsum dolor..</p>
+      <img src="mimari2.jpg" alt="Mountains" style="width:100%">
+      <h4>Beyoğlu</h4>
+      <p>3mm
+
+ƒ/1
+
+0/1s
+
+ISO 640</p>
     </div>
   </div>
 
-  <div class="column people">
+  <div class="column Mimari">
+    <div class="content">
+    <img src="mimari3.jpg" alt="Lights" style="width:100%">
+      <h4>Gün batımı</h4>
+      <p>6mm
+
+ƒ/2
+
+0/1s
+
+ISO 20</p>
+    </div>
+  </div>
+
+  <div class="column Mimari">
+    <div class="content">
+    <img src="mimari11.jpg" alt="Nature" style="width:100%">
+      <h4>Yansımalar</h4>
+      <p>6mm
+
+ƒ/2
+
+0/1s
+
+ISO 20</p>
+    </div>
+  </div>
+
+  <div class="column Sehir">
+    <div class="content">
+      <img src="inebey1.jpg" alt="Car" style="width:100%">
+      <h4>Samatya</h4>
+      <p>3mm
+
+ƒ/1
+
+0/1s
+
+ISO 100</p>
+    </div>
+  </div>
+
+  <div class="column Sehir">
+    <div class="content">
+    <img src="karakoy.jpg" alt="Car" style="width:100%">
+      <h4>Galata</h4>
+      <p>3mm
+
+ƒ/1
+
+0/1s
+
+ISO 32</p>
+    </div>
+  </div>
+
+  <div class="column Sehir">
+    <div class="content">
+    <img src="mezarlık.jpg" alt="Car" style="width:100%">
+      <h4>Zincirlikuyu</h4>
+      <p>3mm
+
+ƒ/1
+
+0/1s
+
+ISO 50</p>
+    </div>
+  </div>
+
+  <div class="column Doga">
     <div class="content">
       <img src="mimaripalas.jpg" alt="Car" style="width:100%">
       <h4>Girl</h4>
       <p>Lorem ipsum dolor..</p>
     </div>
   </div>
-  <div class="column people">
+  <div class="column Doga">
     <div class="content">
     <img src="samatya.jpg" alt="Car" style="width:100%">
       <h4>Man</h4>
       <p>Lorem ipsum dolor..</p>
     </div>
   </div>
-  <div class="column people">
+  <div class="column Doga">
     <div class="content">
     <img src="/w3images/people3.jpg" alt="Car" style="width:100%">
       <h4>Woman</h4>
       <p>Lorem ipsum dolor..</p>
     </div>
   </div>
+  <div class="column Portre">
+    <div class="content">
+    <img src="edirne.jpg" alt="Nature" style="width:100%">
+      <h4>Forest</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column Portre">
+    <div class="content">
+    <img src="edirne.jpg" alt="Nature" style="width:100%">
+      <h4>Forest</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column Portre">
+    <div class="content">
+    <img src="edirne.jpg" alt="Nature" style="width:100%">
+      <h4>Forest</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+
 <!-- END GRID -->
 </div>
 
 <!-- END MAIN -->
+</div>
+<div class="sosyalbutonlar">
+
+      <a href="https://www.facebook.com/profile.php?id=1507011263" target="_blank" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+      <a href="https://twitter.com/emrenbregovic" target="_blank" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+      <a href="http://instagram.com/emrenbregovic" target="_blank" class="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+      <a href="http://vsco.com/emrenbregovic" target="_blank" class="vsco"><i class="fa fa-vsco" aria-hidden="true"></i></a>
+
+     
 </div>
 
 <script>
